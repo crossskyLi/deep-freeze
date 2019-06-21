@@ -1,4 +1,4 @@
-module.exports = function deepFreeze (o) {
+export default function deepFreeze (o) {
   Object.freeze(o);
 
   Object.getOwnPropertyNames(o).forEach(function (prop) {
